@@ -16,7 +16,7 @@ class PlayScene extends Phaser.Scene {
     camera.setBounds(0, 0, this.game.config.width, this.game.config.height);
 
     // Let's construct our player's skeleton!
-    this.body = new Body(this, 100, 100, 35, 50, 0x666666);
+    this.body = new Body(this, 100, 225, 35, 50, 0x666666);
     this.neck = new Appendage(this, this.body, 0, -25, 20, 0x666666);
     this.head = new Appendage(this, this.neck, 0, -15, 25, 0x777777);
     this.leftArmUpper = new Appendage(this, this.body, -20, -12, 15, 0x666666);
@@ -75,7 +75,7 @@ class PlayScene extends Phaser.Scene {
       -5,
       10,
       20,
-      0x888888
+      0x8f8f8f
     );
     this.rightHand = new Appendage(
       this,
@@ -83,7 +83,7 @@ class PlayScene extends Phaser.Scene {
       5,
       10,
       20,
-      0x888888
+      0x8f8f8f
     );
   }
 
